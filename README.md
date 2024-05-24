@@ -12,4 +12,5 @@ To make this fun it has to meet the following requirements:
 
 
 
-- and a random star wars quote
+# But why?
+With the release of ChatGPT-4 and other AI it's only a matter of time before AI is used in the creation of professional websites, my goal here is to see if there is a difference between what AI can generate and what the human mind can generate in terms of HTML and CSS.
