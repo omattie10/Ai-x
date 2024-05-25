@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-X Personal Assistant - Calendar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-theme">
+    <header>
+        <h1>AI-X Personal Assistant - Calendar</h1>
+        <button id="theme-toggle" class="styled-button">Switch Theme</button>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="#">Tasks</a></li>
+            <li><a href="#">Notes</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="calendar-section">
+            <div id="current-time">Current Time: <span id="time-display"></span></div>
+            <h2>Calendar</h2>
+            <div id="current-view">Viewing: <span id="current-view-date"></span></div>
+            <div id="calendar"></div>
+            <button id="prev-month" class="styled-button">Previous Month</button>
+            <button id="next-month" class="styled-button">Next Month</button>
+        </section>
+        <section id="reminder-section">
+            <h3>Add Reminder</h3>
+            <input type="date" id="reminder-date">
+            <input type="text" id="reminder-text" placeholder="Reminder Text">
+            <button id="add-reminder" class="styled-button">Add Reminder</button>
+        </section>
+    </main>
+    <div id="cookie-consent">
+        <p>This site uses cookies to store your preferences. <button id="accept-cookies" class="styled-button">Accept</button></p>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/calendar.js"></script>
+</body>
+</html>

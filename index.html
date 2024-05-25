@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-X Personal Assistant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-theme">
+    <header>
+        <h1>AI-X Personal Assistant</h1>
+        <button id="theme-toggle" class="styled-button">Switch Theme</button>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="#">Tasks</a></li>
+            <li><a href="#">Notes</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="tasks-section">
+            <h2>Tasks</h2>
+            <ul id="tasks-list"></ul>
+            <input type="text" id="new-task" placeholder="New Task">
+            <button id="add-task" class="styled-button">Add Task</button>
+        </section>
+        <section id="notes-section">
+            <h2>Notes</h2>
+            <ul id="notes-list"></ul>
+            <textarea id="new-note" placeholder="New Note"></textarea>
+            <button id="save-note" class="styled-button">Save Note</button>
+        </section>
+        <section id="reminders-section">
+            <h2>Reminders</h2>
+            <ul id="reminders-list"></ul>
+        </section>
+    </main>
+    <div id="cookie-consent">
+        <script>
+            const getCookie = (name) => {
+                return document.cookie.split('; ').reduce((r, v) => {
+                    const parts = v.split('=');
+                    return parts[0] === name ? decodeURIComponent(parts[1]) : r;
+                }, '');
+            };
+
+            if (!getCookie('cookiesAccepted')) {
+                document.write('<p>This site uses cookies to store your preferences. <button id="accept-cookies" class="styled-button">Accept</button></p>');
+            }
+        </script>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
